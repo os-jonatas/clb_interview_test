@@ -56,7 +56,7 @@ class HomeScreen extends StatelessWidget {
           // Exibe a lista de documentos após o carregamento
           return ListView.builder(
             padding: const EdgeInsets.all(8.0),
-            itemCount: provider.documents.length,
+            itemCount: 10,
             itemBuilder: (context, index) {
               final PdfDocument doc = provider.documents[index];
               return _DocumentCard(document: doc);

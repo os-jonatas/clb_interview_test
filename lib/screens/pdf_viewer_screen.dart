@@ -86,7 +86,7 @@ class _PdfViewerScreenState extends State<PdfViewerScreen> {
           ),
           body: SfPdfViewer.network(
             currentDoc.url,
-            controller: _pdfViewerController,
+            controller: null,
             // Callback disparado quando o documento termina de carregar
             onDocumentLoaded: (PdfDocumentLoadedDetails details) {
               setState(() {
